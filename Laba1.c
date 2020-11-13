@@ -8,6 +8,7 @@ int main() {
     unsigned char minus = 0;
     unsigned int digits[64];
     int count;
+    printf("vvedite chislo");
     scanf("%d", &num);
 
      
