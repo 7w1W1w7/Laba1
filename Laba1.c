@@ -10,20 +10,26 @@ int main() {
     int count;
     scanf("%d", &num);
 
+     
+     
     if (num < 0) {
         num = -num;
         minus = 1;
-    }
+        }
+    
     for (count = 0; num != 0; count++) {
         digits[count] = num % base;
         num /= base;
-    }
+        }
+        
     if (minus) {
         printf("- ");
-    }
-    int iter = count - 1;
-    while (iter >= 0) {
+        }
+        int iter = count - 1;
+    
+     
+      while (iter >= 0) {
         printf("%d ", digits[iter]);
         iter--;
-    } return 0;
+        } return 0;
 }
